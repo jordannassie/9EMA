@@ -21,7 +21,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-10 md:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           <Link href="/" aria-label="9EMA home">
-            <Image src="/9logo.png" alt="" width={72} height={72} className="h-14 w-14 object-contain" />
+            <Image src="/9logo.png" alt="" width={720} height={480} className="h-16 w-auto object-contain" />
           </Link>
           <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted" aria-label="Footer">
             {navLinks().map((link) => (

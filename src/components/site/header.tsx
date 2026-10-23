@@ -37,7 +37,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-line bg-background/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 md:px-6">
         <Link href="/" className="shrink-0" aria-label="9EMA home">
-          <Image src="/9logo.png" alt="" width={56} height={56} className="h-11 w-11 object-contain" priority />
+          <Image src="/9logo.png" alt="" width={720} height={480} className="h-12 w-auto object-contain" priority />
         </Link>
         <nav className="hidden flex-1 items-center justify-center gap-6 lg:flex" aria-label="Primary">
           {links.map((link) => (

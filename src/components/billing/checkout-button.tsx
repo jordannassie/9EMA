@@ -3,7 +3,13 @@
 import { useState } from "react";
 import { greenButtonClass } from "@/components/site/ui";
 
-export function CheckoutButton({ label = "Get the indicator" }: { label?: string }) {
+export function CheckoutButton({
+  label = "Get the indicator",
+  product = "indicator",
+}: {
+  label?: string;
+  product?: "indicator" | "book";
+}) {
   const [message, setMessage] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
 
@@ -11,7 +17,11 @@ export function CheckoutButton({ label = "Get the indicator" }: { label?: string
     setPending(true);
     setMessage(null);
     try {
-      const response = await fetch("/api/checkout", { method: "POST" });
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ product }),
+      });
       const body = (await response.json()) as { url?: string; message?: string };
       if (body.url) {
         window.location.href = body.url;

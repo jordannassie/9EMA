@@ -1,3 +1,4 @@
+import { BookSection } from "@/components/site/book-section";
 import { CommunitySection } from "@/components/site/community-section";
 import { Hero } from "@/components/site/hero";
 import { IndicatorSection } from "@/components/site/indicator-section";
@@ -12,6 +13,7 @@ export default function Home() {
       <LiveSection />
       <IndicatorSection />
       <SetupsSection />
+      <BookSection />
       <PartnersSection />
       <CommunitySection />
     </main>

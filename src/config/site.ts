@@ -10,6 +10,11 @@ export const siteConfig = {
     monthlyPriceCents: 3199,
     currency: "USD",
   },
+  book: {
+    name: "9EMA Trading Playbook",
+    priceCents: 1900,
+    currency: "USD",
+  },
   socials: {
     youtube: "https://www.youtube.com/channel/UCwEmsAvYrL_lZYBpm0unsyA",
     kick: "",
@@ -43,6 +48,11 @@ export function monthlyPriceLabel() {
   return `$${(siteConfig.indicator.monthlyPriceCents / 100).toFixed(2)}`;
 }
 
+export function bookPriceLabel() {
+  const dollars = siteConfig.book.priceCents / 100;
+  return Number.isInteger(dollars) ? `$${dollars}` : `$${dollars.toFixed(2)}`;
+}
+
 export function configuredSocial(key: SocialKey) {
   const url = siteConfig.socials[key].trim();
   return url || null;
@@ -56,6 +66,7 @@ export function navLinks() {
     { href: "/#prop-firms", label: "Prop Firms" },
     { href: "/#setups", label: "Setups" },
     { href: "/playbook", label: "Playbook" },
+    { href: "/#book", label: "Book" },
     { href: "/#about", label: "About" },
   ];
 }

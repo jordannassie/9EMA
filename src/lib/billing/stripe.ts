@@ -49,3 +49,25 @@ export async function resolveMonthlyPriceId(stripe: Stripe) {
   });
   return created.id;
 }
+
+export async function resolveBookPriceId(stripe: Stripe) {
+  const configured = process.env.STRIPE_BOOK_PRICE_ID?.trim();
+  if (configured) return configured;
+
+  const prices = await stripe.prices.list({ active: true, limit: 100, type: "one_time" });
+  const existing = prices.data.find(
+    (price) =>
+      price.unit_amount === siteConfig.book.priceCents &&
+      price.currency === "usd" &&
+      price.nickname === "9ema-trading-playbook",
+  );
+  if (existing) return existing.id;
+
+  const created = await stripe.prices.create({
+    currency: "usd",
+    unit_amount: siteConfig.book.priceCents,
+    nickname: "9ema-trading-playbook",
+    product_data: { name: siteConfig.book.name },
+  });
+  return created.id;
+}
