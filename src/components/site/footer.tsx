@@ -59,8 +59,8 @@ export function Footer() {
           <p className="max-w-3xl">
             Futures trading involves substantial risk. Past performance is not indicative of future
             results. 9EMA provides educational content and trading tools, not personalized financial
-            advice. Partner buttons open each firm&apos;s official website. Affiliate links and coupon
-            codes are omitted until a firm confirms them.
+            advice. Prop firm names open official websites. Affiliate links and coupon codes are not
+            connected.
           </p>
           <p className="shrink-0">© 2026 9EMA.com</p>
         </div>
