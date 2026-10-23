@@ -12,11 +12,11 @@ export function CommunitySection() {
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border border-line bg-card lg:grid-cols-[0.85fr_1.15fr]">
         <div className="relative min-h-80">
           <Image
-            src="/images/9-hero.jpg"
-            alt="Close portrait of 9 wearing the black 9EMA mask"
+            src="/images/9-gym.jpg"
+            alt="9 at the gym wearing a black 9EMA mask and holding a phone with a chart"
             fill
             sizes="(min-width: 1024px) 40vw, 100vw"
-            className="object-cover object-[center_18%]"
+            className="object-cover object-center"
           />
         </div>
         <div className="flex flex-col justify-center px-6 py-10 md:px-12">

@@ -11,7 +11,7 @@ export const siteConfig = {
     currency: "USD",
   },
   socials: {
-    youtube: "",
+    youtube: "https://www.youtube.com/channel/UCwEmsAvYrL_lZYBpm0unsyA",
     kick: "",
     tiktok: "",
     x: "",

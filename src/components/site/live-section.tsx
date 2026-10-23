@@ -56,7 +56,7 @@ export function LiveSection() {
           </ul>
         </div>
         <div className="overflow-hidden rounded-2xl border border-line bg-card">
-          <div className="relative aspect-video">
+          <div className={`relative ${videoId ? "aspect-video" : "aspect-[11/10]"}`}>
             {videoId ? (
               <iframe
                 title="9EMA YouTube livestream"
@@ -68,14 +68,13 @@ export function LiveSection() {
             ) : (
               <>
                 <Image
-                  src="/images/9-desk.jpg"
-                  alt="9 at a trading desk with the 9EMA mask and monitors"
+                  src="/images/9-cafe.jpg"
+                  alt="9 at a coffee shop wearing a black 9EMA mask, with a chart open on a laptop"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-black/55" />
-                <div className="absolute inset-0 flex flex-col items-start justify-end p-5">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 pt-16">
                   <p className="font-display text-3xl font-bold uppercase text-white">Livestream preview</p>
                   <p className="mt-2 max-w-sm text-sm text-white/80">
                     A YouTube embed appears here after a video id is added. No live status is shown until then.
