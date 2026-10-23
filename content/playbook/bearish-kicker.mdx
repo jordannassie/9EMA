@@ -1,0 +1,64 @@
+---
+{
+  "category": "candlestick",
+  "order": 20,
+  "slug": "bearish-kicker",
+  "name": "Bearish Kicker",
+  "direction": "bearish",
+  "summary": "A bullish candle followed by a bearish candle that gaps down and does not overlap.",
+  "description": "The second candle opens below the prior range and continues lower. The unfilled gap separates it from a normal bearish candle.",
+  "label": "Bearish kicker gapping below the prior bullish candle",
+  "candles": [
+    {
+      "o": 14,
+      "h": 22,
+      "l": 13.5,
+      "c": 21
+    },
+    {
+      "o": 12,
+      "h": 12.2,
+      "l": 6,
+      "c": 6.6
+    }
+  ],
+  "identification": [
+    "The first candle is bullish.",
+    "The second candle is bearish.",
+    "The ranges do not overlap."
+  ],
+  "context": "Like the bullish version, this is uncommon. Most down candles are not kickers.",
+  "entry": "An example entry is a break of the second candle's low.",
+  "stop": "An example stop is back above the second candle's open, inside the gap.",
+  "target": "An example target is the next prior low.",
+  "mistakes": [
+    "Ignoring that the gap must stay open for the pattern to remain intact."
+  ],
+  "related": [
+    "bullish-kicker",
+    "bearish-engulfing"
+  ],
+  "diagram": {
+    "kind": "candles",
+    "label": "Bearish kicker gapping below the prior bullish candle",
+    "candles": [
+      {
+        "o": 14,
+        "h": 22,
+        "l": 13.5,
+        "c": 21
+      },
+      {
+        "o": 12,
+        "h": 12.2,
+        "l": 6,
+        "c": 6.6
+      }
+    ]
+  }
+}
+---
+
+The second candle opens below the prior range and continues lower. The unfilled gap separates it from a normal bearish candle.
+
+This is an example of how traders often plan the pattern. It is not a promise that price will reach the target.

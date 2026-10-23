@@ -16,7 +16,7 @@ export function SetupsSection() {
               Simple trading setups explained with real chart examples.
             </p>
           </div>
-          <Link href="/setups" className="text-sm font-bold uppercase tracking-wide text-neon hover:text-white">
+          <Link href="/playbook" className="text-sm font-bold uppercase tracking-wide text-neon hover:text-white">
             View all setups →
           </Link>
         </div>
@@ -24,7 +24,7 @@ export function SetupsSection() {
           {setups.map((setup) => (
             <li key={setup.slug}>
               <Link
-                href={`/setups/${setup.slug}`}
+                href={`/playbook/${setup.slug}`}
                 className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-card transition-colors hover:border-neon"
               >
                 <div className="h-40 border-b border-line">

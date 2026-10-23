@@ -55,6 +55,7 @@ export function navLinks() {
     { href: "/#indicator", label: "Indicator" },
     { href: "/#prop-firms", label: "Prop Firms" },
     { href: "/#setups", label: "Setups" },
+    { href: "/playbook", label: "Playbook" },
     { href: "/#about", label: "About" },
   ];
 }

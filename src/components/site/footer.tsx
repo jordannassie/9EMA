@@ -4,6 +4,7 @@ import { configuredSocial, navLinks, siteConfig, socialLabels, type SocialKey } 
 import { SocialGlyph } from "@/components/site/icons";
 
 const extraLinks = [
+  { href: "/playbook", label: "Playbook" },
   { href: "/contact", label: "Contact" },
   { href: "/terms", label: "Terms" },
   { href: "/privacy", label: "Privacy" },
