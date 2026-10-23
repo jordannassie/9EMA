@@ -57,14 +57,14 @@ export function Hero() {
           </ul>
         </div>
         <div className="relative mx-auto w-full max-w-xl">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-card">
+          <div className="relative aspect-[11/10] overflow-hidden rounded-[2rem] border border-line bg-card">
             <Image
-              src="/images/9-hero.jpg"
-              alt="9, the AI trading personality, wearing a black mask with the 9EMA logo"
+              src="/images/9-hero-car.jpg"
+              alt="9 wearing a black 9EMA mask, making a peace sign in front of a black Mercedes"
               fill
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover object-top"
+              className="object-cover object-center"
             />
           </div>
         </div>
