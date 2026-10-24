@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ChartRotator } from "@/components/site/chart-rotator";
 import { greenButtonClass } from "@/components/site/ui";
 
 const cards = [
@@ -9,20 +10,6 @@ const cards = [
 ];
 
 const levels = ["VWAP", "VAH", "VAL", "50%", "Next Zone"];
-
-function ChartShot() {
-  return (
-    <div className="overflow-hidden rounded-[2rem] border border-line bg-black">
-      <Image
-        src="/images/9-indicator-chart.png"
-        alt="Chart with zones, volume bubbles, and buy and sell power marks"
-        width={366}
-        height={504}
-        className="h-auto w-full"
-      />
-    </div>
-  );
-}
 
 export function IndicatorChartSection() {
   return (
@@ -44,7 +31,7 @@ export function IndicatorChartSection() {
             A zone, a volume bubble, and EMA direction can line up. The next mark is a reference level, not a forecast.
           </p>
           <div className="mt-8 lg:hidden">
-            <ChartShot />
+            <ChartRotator />
           </div>
           <ul className="mt-8 grid gap-4 sm:grid-cols-3">
             {cards.map((card) => (
@@ -77,7 +64,7 @@ export function IndicatorChartSection() {
           </p>
         </div>
         <div className="hidden lg:block">
-          <ChartShot />
+          <ChartRotator />
         </div>
       </div>
     </section>
