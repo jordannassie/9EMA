@@ -1,7 +1,7 @@
 import { BookSection } from "@/components/site/book-section";
 import { CommunitySection } from "@/components/site/community-section";
 import { Hero } from "@/components/site/hero";
-import { IndicatorGuide } from "@/components/site/indicator-guide";
+import { IndicatorChartSection } from "@/components/site/indicator-chart-section";
 import { IndicatorSection } from "@/components/site/indicator-section";
 import { LiveSection } from "@/components/site/live-section";
 import { PartnersSection } from "@/components/site/partners-section";
@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Hero />
       <LiveSection />
-      <IndicatorGuide />
+      <IndicatorChartSection />
       <IndicatorSection />
       <SetupsSection />
       <BookSection />
