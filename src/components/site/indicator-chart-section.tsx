@@ -29,7 +29,14 @@ export function IndicatorChartSection() {
     <section id="indicator-chart" className="scroll-mt-24 border-t border-line px-5 py-16 md:px-8 md:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
         <div>
-          <p className="text-xs font-semibold tracking-[0.28em] text-neon">THE 9EMA INDICATOR</p>
+          <Image
+            src="/9logo.png"
+            alt="9EMA"
+            width={720}
+            height={480}
+            className="h-16 w-auto object-contain sm:h-20"
+          />
+          <p className="mt-6 text-xs font-semibold tracking-[0.28em] text-neon">THE 9EMA INDICATOR</p>
           <h2 className="mt-4 max-w-xl font-display text-5xl font-bold uppercase leading-[0.9] text-white sm:text-6xl">
             See the zone. Watch the volume. Follow the direction.
           </h2>
