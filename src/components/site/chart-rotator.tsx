@@ -24,7 +24,7 @@ export function ChartRotator() {
   }, []);
 
   return (
-    <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-line bg-black">
+    <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-line bg-black lg:aspect-[5/4]">
       {shots.map((shot, i) => (
         <Image
           key={shot.src}

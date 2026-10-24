@@ -14,7 +14,7 @@ const levels = ["VWAP", "VAH", "VAL", "50%", "Next Zone"];
 export function IndicatorChartSection() {
   return (
     <section id="indicator-chart" className="scroll-mt-24 border-t border-line px-5 py-16 md:px-8 md:py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12">
         <div>
           <Image
             src="/9logo.png"
@@ -28,7 +28,7 @@ export function IndicatorChartSection() {
             See the zone. Watch the volume. Follow the direction.
           </h2>
           <p className="mt-5 max-w-xl text-lg text-muted">
-            A zone, a volume bubble, and EMA direction can line up. The next mark is a reference level, not a forecast.
+            A zone, a volume bubble, and EMA direction can line up. The next mark is a liquidity level, not a forecast.
           </p>
           <div className="mt-8 lg:hidden">
             <ChartRotator />
@@ -43,7 +43,7 @@ export function IndicatorChartSection() {
           </ul>
           <p className="mt-8 rounded-2xl border border-line bg-card px-5 py-4 text-sm font-semibold uppercase tracking-wide text-white sm:text-base">
             Zone <span className="text-neon">+</span> Volume bubble <span className="text-neon">+</span> EMA confirmation{" "}
-            <span className="text-neon">→</span> Next reference level
+            <span className="text-neon">→</span> Next liquidity level
           </p>
           <ul className="mt-5 flex flex-wrap gap-2">
             {levels.map((level) => (
