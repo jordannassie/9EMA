@@ -12,8 +12,8 @@ export function CommunitySection() {
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border border-line bg-card lg:grid-cols-[0.85fr_1.15fr]">
         <div className="relative min-h-80">
           <Image
-            src="/images/9-gym.jpg"
-            alt="9 at the gym wearing a black 9EMA mask and holding a phone with a chart"
+            src="/images/9-guy.jpg"
+            alt="9 in a black 9EMA hoodie and mask, leaning on a black Mercedes"
             fill
             sizes="(min-width: 1024px) 40vw, 100vw"
             className="object-cover object-center"

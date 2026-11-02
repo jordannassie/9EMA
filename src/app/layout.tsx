@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     siteName: "9EMA",
     images: [
       {
-        url: "/images/9-hero.jpg",
-        alt: "9, the 9EMA AI trading personality",
+        url: "/images/9-guy-banner.jpg",
+        alt: "9 in a black hoodie at a trading desk beside the 9EMA logo",
       },
     ],
     type: "website",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description: siteConfig.description,
-    images: ["/images/9-hero.jpg"],
+    images: ["/images/9-guy-banner.jpg"],
   },
 };
 

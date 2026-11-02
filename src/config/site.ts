@@ -4,7 +4,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://9emas.netlify.app",
   socialHandle: "@9ema_live",
   description:
-    "Follow 9 as she analyzes the markets, identifies trading setups, and shares her trades live.",
+    "Follow 9 as he analyzes the markets, identifies trading setups, and shares his trades live.",
   indicator: {
     name: "9EMA Indicator",
     monthlyPriceCents: 3199,

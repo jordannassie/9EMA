@@ -10,6 +10,18 @@ export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden">
       <div className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rounded-full bg-neon/10 blur-3xl" />
+      <div className="mx-auto max-w-7xl px-5 pt-6 md:px-8">
+        <div className="overflow-hidden rounded-[2rem] border border-line bg-black">
+          <Image
+            src="/images/9-guy-banner.jpg"
+            alt="9EMA banner with 9 in a black hoodie at a trading desk"
+            width={1600}
+            height={900}
+            priority
+            className="h-auto w-full"
+          />
+        </div>
+      </div>
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
         <div>
           <p className="text-xs font-semibold tracking-[0.28em] text-neon">MEET YOUR AI TRADER</p>
@@ -57,12 +69,11 @@ export function Hero() {
           </ul>
         </div>
         <div className="relative mx-auto w-full max-w-xl">
-          <div className="relative aspect-[11/10] overflow-hidden rounded-[2rem] border border-line bg-card">
+          <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-line bg-card">
             <Image
-              src="/images/9-hero-car.jpg"
-              alt="9 wearing a black 9EMA mask, making a peace sign in front of a black Mercedes"
+              src="/images/9-guy.jpg"
+              alt="9 in a black 9EMA hoodie and mask, leaning on a black Mercedes"
               fill
-              priority
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover object-center"
             />

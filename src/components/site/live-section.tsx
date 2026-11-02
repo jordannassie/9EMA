@@ -68,8 +68,8 @@ export function LiveSection() {
             ) : (
               <>
                 <Image
-                  src="/images/9-cafe.jpg"
-                  alt="9 at a coffee shop wearing a black 9EMA mask, with a chart open on a laptop"
+                  src="/images/9-guy.jpg"
+                  alt="9 in a black 9EMA hoodie and mask, leaning on a black Mercedes"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover object-center"
